@@ -13,10 +13,11 @@ const volumeEl = document.getElementById("volume-el");
 const massEl = document.getElementById("mass-el");
 const inputEl = document.getElementById("input-el");
 
-
 covertBtn.addEventListener("click", function () {
   let originalValue = inputEl.value;
-  lengthEl.textContent = `${originalValue} meter = ${
-    (originalValue * meterToFeet).toFixed(3)
-  } feet | ${originalValue} feet = ${(originalValue / meterToFeet).toFixed(3)} meters`;
-});
+  // prettier-ignore
+  lengthEl.textContent = `${originalValue} meters = ${(originalValue * meterToFeet).toFixed(3)} feet | ${originalValue} feet = ${(originalValue / meterToFeet).toFixed(3)} meters`;;
+  // prettier-ignore
+  volumeEl.textContent = `${originalValue} liters = ${(originalValue * literToGallon).toFixed(3)} gallons | ${originalValue} gallons = ${(originalValue / literToGallon).toFixed(3)} liters`;;
+  // prettier-ignore
+  massEl.textContent = `${originalValue} kilos = ${(originalValue * kiloToPound).toFixed(3)} pounds | ${originalValue} pounds = ${(originalValue / kiloToPound).toFixed(3)} kilos`;})

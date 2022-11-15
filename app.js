@@ -21,3 +21,24 @@ covertBtn.addEventListener("click", function () {
   volumeEl.textContent = `${originalValue} liters = ${(originalValue * literToGallon).toFixed(3)} gallons | ${originalValue} gallons = ${(originalValue / literToGallon).toFixed(3)} liters`;;
   // prettier-ignore
   massEl.textContent = `${originalValue} kilos = ${(originalValue * kiloToPound).toFixed(3)} pounds | ${originalValue} pounds = ${(originalValue / kiloToPound).toFixed(3)} kilos`;})
+
+  function changeLightMode() {
+    let container = document.getElementById("background")
+    let paragraph = document.querySelectorAll(".para-el")
+    let body = document.body
+    let conversionContainer = document.querySelectorAll(".conversion-container")
+    let unitTitle = document.querySelectorAll(".unit-title")
+container.classList.toggle("darkmode-container") 
+body.classList.toggle("dark-mode-body")
+paragraph.forEach((paragraph) => {
+    paragraph.classList.toggle("darkmode-p")
+})
+conversionContainer.forEach((conversionContainer) => {
+    conversionContainer.classList.toggle("darkmode-conversion-container")
+})
+unitTitle.forEach((unitTitle) => {
+    unitTitle.classList.toggle("dark-mode-unit-title")
+})
+
+}
+  

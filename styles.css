@@ -1,6 +1,31 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+  display: inline;
+}
+
+.dark-mode-body {
+  background-color: #273549;
+}
+
+.dark-mode-unit-title {
+  color: #ccc1ff !important;
+}
+
+img {
+  width: 50px;
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: block;
+
+  margin: 20px auto 20px auto;
+}
+
+img:hover {
+  cursor: pointer;
+  background-color: #363f4b
 }
 
 .container {
@@ -9,8 +34,18 @@ body {
   background-color: #f4f4f4;
   margin: auto;
   border-radius: 20px;
+}
 
- 
+.darkmode-container {
+  background-color: #1f2937;
+}
+
+.darkmode-p {
+  color: #ffffff !important;
+}
+.darkmode-conversion-container {
+  border: 1px solid #49586e !important;
+  background-color: #273549 !important;
 }
 
 .header {
@@ -20,8 +55,6 @@ body {
   color: #ffffff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
- 
-  
 }
 
 h1 {
@@ -33,23 +66,8 @@ h1 {
   letter-spacing: -0.03em;
   padding-top: 33px;
   margin-bottom: 0;
-  margin-top: 60px;
 }
 
-.header p {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 58px;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 25px;
-  line-height: 85px;
-  width: 117px;
-  height: 83px;
-  border: 2px solid #b295ff;
-  display: inline-block;
-  border-radius: 5px;
-}
 .number-square {
   text-align: center;
 }
@@ -80,7 +98,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number]{
+input[type="number"] {
   -moz-appearance: textfield;
 }
 

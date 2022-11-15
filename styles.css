@@ -38,21 +38,41 @@ h1 {
   line-height: 85px;
   width: 117px;
   height: 83px;
-  border: 2px solid #B295FF;
+  border: 2px solid #b295ff;
   display: inline-block;
   border-radius: 5px;
 }
 .number-square {
-    text-align: center;
+  text-align: center;
 }
-
 
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+input {
+  height: 40px;
+  width: 70px;
+  border: 2px solid #b295ff;
+  padding: 25px 20px;
+  font-size: 50px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-align: center;
+  background: none;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]{
+  -moz-appearance: textfield;
+}
 
 #convert-btn {
   width: 117px;
@@ -64,8 +84,8 @@ h1 {
 }
 
 #convert-btn:hover {
-    cursor: pointer;
-    background-color: #dfdbdb;
+  cursor: pointer;
+  background-color: #dfdbdb;
 }
 
 .list {
